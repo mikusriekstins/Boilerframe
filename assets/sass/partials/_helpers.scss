@@ -1,0 +1,23 @@
+
+//  =======================  //
+//  Helpers
+//  =======================  //
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * Baseline grid
+ */
+ .show-grid {
+  background-image: linear-gradient(to bottom, cyan 0, rgba(255,255,255,0) 1px);
+  background-repeat: repeat-y;
+  background-size: 100% $baseline;
+}

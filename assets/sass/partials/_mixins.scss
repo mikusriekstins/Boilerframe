@@ -1,0 +1,49 @@
+
+
+//  =======================  //
+//  Mixins
+//  =======================  //
+
+/*
+ * Sizing : Width, Height
+ */
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+/*
+ * Clean : Remove margins and paddings
+ */
+
+@mixin clean() {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * clear : Clears child floats
+ */
+
+@mixin clear() {
+	&:before,
+	&:after {
+	  content: " ";
+	  display: table;
+	}
+
+	&:after {
+	  clear: both;
+	}
+}
+
+/*
+ * Fluid grid : x/12 grid column
+ */
+
+@mixin column($column, $gutter: 30px) {
+	width: 100% / 12 * $column;
+	padding: 0 ($gutter / 2);
+	float: left;
+}

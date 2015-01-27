@@ -1,0 +1,112 @@
+
+//  =======================  //
+//  Partials
+//  =======================  //
+
+@import "partials/reset";
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/helpers";
+@import "partials/grid";
+@import "partials/typography";
+
+//  =======================  //
+//  Defaults
+//  =======================  //
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/*
+ * One box-sizing to rule them all
+ */
+
+*,
+:before,
+:after {
+	box-sizing: border-box !important;
+}
+
+/*
+ * Remove selection shadow
+ */
+
+::-moz-selection {
+  background: $selection-bg;
+  color: $selection;
+  text-shadow: none;
+}
+
+::selection {
+  background: $selection-bg;
+  color: $selection;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and
+ * canvas and the bottom of their containers
+ */
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * No transitions before DOMContentLoaded
+ */
+
+body:not(.loaded) * {
+	transition: all 0s linear !important;
+}
+
+//  =======================  //
+//  Browse happy
+//  =======================  //
+
+.browsehappy {
+  margin: 0;
+  background: #ddd;
+  color: black;
+  padding: 1rem;
+}
+
+//  =======================  //
+//  Modules styles
+//  =======================  //
+
+@import "modules/base";

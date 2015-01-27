@@ -1,0 +1,54 @@
+
+//  =======================  //
+//  Grid
+//  =======================  //
+
+.wrap {
+  @if $is-centered { margin: 0 auto; }
+  @include clear();
+  max-width: $max-width + ($side-padding * 2);
+  min-width: $min-width;
+  padding: 0 $side-padding;
+}
+
+/*
+ * Six column grid
+ */
+
+.col-one,
+.col-two,
+.col-three,
+.col-four,
+.col-five,
+.col-six {
+  padding: 0 ($gutter / 2);
+  float: left;
+}
+
+.col-one {
+  width: 100% / 6 * 1;
+
+  @media screen and (max-width: 40em) {
+    width: 100% / 6 * 2;
+  }
+}
+
+.col-two {
+  width: 100% / 6 * 2;
+}
+
+.col-three {
+  width: 100% / 6 * 3;
+}
+
+.col-four {
+  width: 100% / 6 * 4;
+}
+
+.col-five {
+  width: 100% / 6 * 5;
+}
+
+.col-six {
+  width: 100% / 6 * 6;
+}
