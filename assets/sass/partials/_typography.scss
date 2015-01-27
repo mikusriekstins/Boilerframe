@@ -14,6 +14,7 @@ h1 {
 	@if ($h1-type != $body-type) { font-family: $h1-type; }
 	@if ($h1-spacing != 0) { letter-spacing: $h1-spacing; }
 	@if ($h1-caps != false) { text-transform: uppercase; }
+	@include baseline-shift($h1-shift, $baseline);
 	font-size: $h1-size;
 	line-height: $h1-height;
 }
@@ -25,6 +26,7 @@ h2 {
 	@if ($h2-type != $body-type) { font-family: $h2-type; }
 	@if ($h2-spacing != 0) { letter-spacing: $h2-spacing; }
 	@if ($h2-caps != false) { text-transform: uppercase; }
+	@include baseline-shift($h2-shift, $baseline);
 	font-size: $h2-size;
 	line-height: $h2-height;
 }
@@ -36,6 +38,7 @@ h3 {
 	@if ($h3-type != $body-type) { font-family: $h3-type; }
 	@if ($h3-spacing != 0) { letter-spacing: $h3-spacing; }
 	@if ($h3-caps != false) { text-transform: uppercase; }
+	@include baseline-shift($h3-shift, $baseline);
 	font-size: $h3-size;
 	line-height: $h3-height;
 }
@@ -47,6 +50,7 @@ h4 {
 	@if ($h4-type != $body-type) { font-family: $h4-type; }
 	@if ($h4-spacing != 0) { letter-spacing: $h4-spacing; }
 	@if ($h4-caps != false) { text-transform: uppercase; }
+	@include baseline-shift($h4-shift, $baseline);
 	font-size: $h4-size;
 	line-height: $h4-height;
 }
