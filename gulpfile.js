@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var coffee = require('gulp-coffee');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-ruby-sass');
+//var uglify = require('gulp-uglify');
+var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 
