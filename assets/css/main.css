@@ -47,6 +47,10 @@ table {
  * Baseline shift : shift baseline within given 1/2 baseline grid
  */
 /*
+ * Set type : uses sass map with family, weight, size, height,
+ * spacing, caps and shift and baseline
+ */
+/*
  * Colors. Names based on their function.
  */
 /*
@@ -113,9 +117,6 @@ table {
 .col-six {
   width: 100%; }
 
-/*
-* Headings 1-4
-*/
 h1 {
   font-weight: 700;
   padding-top: 10px;
@@ -124,12 +125,11 @@ h1 {
   line-height: 48px; }
 
 h2 {
-  padding-top: 0px;
-  padding-bottom: 12px;
   font-size: 36px;
   line-height: 48px; }
 
 h3 {
+  font-weight: 700;
   padding-top: 8px;
   padding-bottom: 4px;
   font-size: 28px;
@@ -139,6 +139,12 @@ h4 {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px; }
+
+p, li {
   padding-top: 7px;
   padding-bottom: 5px;
   font-size: 16px;

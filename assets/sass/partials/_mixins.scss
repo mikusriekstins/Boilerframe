@@ -54,8 +54,31 @@
  */
 
 @mixin baseline-shift($shift, $baseline) {
-	@if ($shift != 0) {
-		padding-top: $shift;
-		padding-bottom: $baseline / 2 - $shift;
+	padding-top: $shift;
+	padding-bottom: $baseline / 2 - $shift;
+}
+
+/*
+ * Set type : uses sass map with family, weight, size, height,
+ * spacing, caps and shift and baseline
+ */
+
+@mixin set-type($element, $baseline) {
+	@if (map-get($element, family)) {
+		font-family: map-get($element, family);
 	}
+	@if (map-get($element, weight) != 400) {
+		font-weight: map-get($h4, weight);
+	}
+	@if (map-get($element, spacing) != 0) {
+		letter-spacing: map-get($h4, spacing);
+	}
+	@if (map-get($element, caps)) {
+		text-transform: uppercase;
+	}
+	@if (map-get($element, shift) != 0) {
+		@include baseline-shift(map-get($element, shift), $baseline);
+	}
+	font-size: map-get($element, size);
+	line-height: map-get($element, height);
 }
