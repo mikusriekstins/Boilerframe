@@ -39,37 +39,56 @@ $display-type: Georgia, serif;
 */
 
 // Level 1 heading
-$h1-type: $body-type;
-$h1-weight: 700;
-$h1-size: 42px;
-$h1-height: 48px;
-$h1-spacing: 0;
-$h1-caps: false;
-$h1-shift: 10px;
+$h1: (
+  family: false,
+  weight: 700,
+  size: 42px,
+  height: 48px,
+  spacing: 0,
+  caps: false,
+  shift: 10px
+);
 
 // Level 2 heading
-$h2-type: $body-type;
-$h2-weight: 400;
-$h2-size: 36px;
-$h2-height: 48px;
-$h2-spacing: 0;
-$h2-caps: false;
-$h2-shift: 0px;
+$h2: (
+  family: false,
+  weight: 400,
+  size: 36px,
+  height: 48px,
+  spacing: 0,
+  caps: false,
+  shift: 0
+);
 
 // Level 3 heading
-$h3-type: $body-type;
-$h3-weight: 400;
-$h3-size: 28px;
-$h3-height: 36px;
-$h3-spacing: 0;
-$h3-caps: false;
-$h3-shift: 8px;
+$h3: (
+  family: false,
+  weight: 600,
+  size: 28px,
+  height: 36px,
+  spacing: 0,
+  caps: false,
+  shift: 8px
+);
 
 // Level 4 heading
-$h4-type: $body-type;
-$h4-weight: 700;
-$h4-size: 16px;
-$h4-height: 24px;
-$h4-spacing: 1px;
-$h4-caps: true;
-$h4-shift: 7px;
+$h4: (
+  family: false,
+  weight: 700,
+  size: 16px,
+  height: 24px,
+  spacing: 1px,
+  caps: true,
+  shift: 7px
+);
+
+// Paragraphs and lists
+$p-li: (
+  family: false,
+  weight: 400,
+  size: 16px,
+  height: 24px,
+  spacing: 0,
+  caps: false,
+  shift: 7px
+);

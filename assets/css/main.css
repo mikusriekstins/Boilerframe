@@ -2,55 +2,34 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /*
  * Sizing : Width, Height
@@ -68,6 +47,10 @@ table {
  * Baseline shift : shift baseline within given 1/2 baseline grid
  */
 /*
+ * Set type : uses sass map with family, weight, size, height,
+ * spacing, caps and shift and baseline
+ */
+/*
  * Colors. Names based on their function.
  */
 /*
@@ -80,15 +63,12 @@ table {
 * Global typography settings for base styles.
 * Baseline needs to be shifted for perfect alignment.
 */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 /*
  * Baseline grid
@@ -96,87 +76,64 @@ table {
 .show-grid {
   background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);
   background-repeat: repeat-y;
-  background-size: 100% 24px;
-}
+  background-size: 100% 24px; }
 
 .wrap {
   margin: 0 auto;
   max-width: 1080px;
   min-width: 320px;
-  padding: 0 60px;
-}
-.wrap:before, .wrap:after {
-  content: " ";
-  display: table;
-}
-.wrap:after {
-  clear: both;
-}
+  padding: 0 60px; }
+  .wrap:before, .wrap:after {
+    content: " ";
+    display: table; }
+  .wrap:after {
+    clear: both; }
 
 /*
  * Six column grid
  */
-.col-one,
-.col-two,
-.col-three,
-.col-four,
-.col-five,
-.col-six {
+.col-one, .col-two, .col-three, .col-four, .col-five, .col-six {
   padding: 0 15px;
-  float: left;
-}
+  float: left; }
 
 .col-one {
-  width: 16.66667%;
-}
-@media screen and (max-width: 40em) {
-  .col-one {
-    width: 33.33333%;
-  }
-}
+  width: 16.66667%; }
+  @media screen and (max-width: 40em) {
+    .col-one {
+      width: 33.33333%; } }
 
 .col-two {
-  width: 33.33333%;
-}
+  width: 33.33333%; }
 
 .col-three {
-  width: 50%;
-}
+  width: 50%; }
 
 .col-four {
-  width: 66.66667%;
-}
+  width: 66.66667%; }
 
 .col-five {
-  width: 83.33333%;
-}
+  width: 83.33333%; }
 
 .col-six {
-  width: 100%;
-}
+  width: 100%; }
 
-/*
-* Headings 1-4
-*/
 h1 {
   font-weight: 700;
   padding-top: 10px;
   padding-bottom: 2px;
   font-size: 42px;
-  line-height: 48px;
-}
+  line-height: 48px; }
 
 h2 {
   font-size: 36px;
-  line-height: 48px;
-}
+  line-height: 48px; }
 
 h3 {
+  font-weight: 700;
   padding-top: 8px;
   padding-bottom: 4px;
   font-size: 28px;
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 h4 {
   font-weight: 700;
@@ -185,30 +142,26 @@ h4 {
   padding-top: 7px;
   padding-bottom: 5px;
   font-size: 16px;
-  line-height: 24px;
-}
+  line-height: 24px; }
 
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
+p, li {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px; }
+
+html, button, input, select, textarea {
+  color: #222; }
 
 html {
   font-size: 100%;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 /*
  * One box-sizing to rule them all
  */
-*,
-:before,
-:after {
-  box-sizing: border-box !important;
-}
+*, :before, :after {
+  box-sizing: border-box !important; }
 
 /*
  * Remove selection shadow
@@ -216,14 +169,12 @@ html {
 ::-moz-selection {
   background: hotpink;
   color: white;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: hotpink;
   color: white;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
@@ -234,43 +185,34 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between images, videos, audio and
  * canvas and the bottom of their containers
  */
-audio,
-canvas,
-img,
-video {
-  vertical-align: middle;
-}
+audio, canvas, img, video {
+  vertical-align: middle; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /*
  * No transitions before DOMContentLoaded
  */
 body:not(.loaded) * {
-  transition: all 0s linear !important;
-}
+  transition: all 0s linear !important; }
 
 .browsehappy {
   margin: 0;
   background: #ddd;
   color: black;
-  padding: 1rem;
-}
+  padding: 1rem; }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
